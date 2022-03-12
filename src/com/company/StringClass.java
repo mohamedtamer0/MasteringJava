@@ -14,5 +14,9 @@ public class StringClass {
         StringBuilder mn = new StringBuilder(s1);
         mn.append(" Mohamed");
         System.out.println(mn);
+
+        System.out.println(mn.length());
+        int position = mn.indexOf("Tamer");
+        System.out.println(position);
     }
 }
