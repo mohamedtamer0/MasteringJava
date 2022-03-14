@@ -9,5 +9,7 @@ public class S_append {
 
         name.insert(0,"MR: ");
         System.out.println(name);
+        System.out.println(name.capacity());
+
     }
 }
