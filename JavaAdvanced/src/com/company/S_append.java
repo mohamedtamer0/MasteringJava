@@ -11,5 +11,13 @@ public class S_append {
         System.out.println(name);
         System.out.println(name.capacity());
 
+        StringBuilder name2 = new StringBuilder("Mohamed");
+        StringBuilder name3 = new StringBuilder("Mohamed");
+        name2.insert(7," Tamer");
+        System.out.println(name2);
+
+        name3.replace(0,4,"Ah");
+        System.out.println(name3);
+
     }
 }
