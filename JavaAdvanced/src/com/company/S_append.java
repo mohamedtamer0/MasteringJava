@@ -28,5 +28,14 @@ public class S_append {
         StringTokenizer str2 = new StringTokenizer("My Name is Mohamed ,Tamer");
         System.out.println(str2.nextToken(","));
 
+
+        String myName = "Tamer";
+        String s1 = String.format("Name is %s", myName);
+        String s2 = String.format("Value is %f", 32.5554585);
+        String s3 = String.format("Value is %44.11f", 32.54);
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
     }
 }
