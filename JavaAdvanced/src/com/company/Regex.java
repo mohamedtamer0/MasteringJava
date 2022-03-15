@@ -60,5 +60,28 @@ public class Regex {
         System.out.println(p4);
         System.out.println(p5);
 
+        System.out.println("==================");
+
+        boolean p6 = Pattern.matches("m{2}","m");
+        boolean p7 = Pattern.matches("m{5}","mmmmm");
+        System.out.println(p6);
+        System.out.println(p7);
+
+
+        System.out.println("==================");
+
+        boolean d = Pattern.matches("\\d","abc");
+        boolean d1 = Pattern.matches("\\d","1");
+        boolean d2 = Pattern.matches("\\d","664646464");
+        System.out.println(d);
+        System.out.println(d1);
+        System.out.println(d2);
+
+        System.out.println("==================");
+
+        String email = "mohamed_tamer4228@yahoo.com";
+        String pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-z])(?=.*[@#$%_^&+=])(?=\\S+$).{10,30}";
+        System.out.println(email.matches(pattern));
+
     }
 }
