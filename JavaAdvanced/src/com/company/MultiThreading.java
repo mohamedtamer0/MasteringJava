@@ -22,6 +22,13 @@ public class MultiThreading extends Thread {
         obj2.start();
 
         obj.start();
+
+
+        try {
+            obj.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
     }
 }
 
