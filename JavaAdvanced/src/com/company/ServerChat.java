@@ -25,7 +25,7 @@ public class ServerChat {
             //Client
             System.out.println("Waiting for Clients to be connect.......");
             if ((r_msg = (String) ois.readObject()) != null) {
-                System.out.println("User says:" + r_msg);
+                System.out.print("\n User says:" + r_msg);
             }
 
             //server
